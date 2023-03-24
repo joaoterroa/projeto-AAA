@@ -1,1 +1,1 @@
-# Projeto de Aprendizagem Automática Avançada 2022/2023
+# Projeto AAA 2022/2023

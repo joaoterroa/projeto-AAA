@@ -29,7 +29,11 @@ conda create --name <env> --file environment.yml
 
 Replace `<env>` with the name of your environment.
 
-### Step 2: Running the Application
+### Step 2: Download the Models
+
+You can download the .h5 files for the trained models from [here](https://drive.google.com/drive/folders/1ZhxHnUisjtoPmuSekLHPObAlvYcrgkEI?usp=share_link). Place the files in the `app` directory.
+
+### Step 3: Running the Application
 
 After setting up the environment, you can run the application using:
 

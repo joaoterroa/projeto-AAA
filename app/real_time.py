@@ -166,7 +166,7 @@ with mp_hands.Hands(
                         (x_min - extra_length + 5, y_min - extra_length - 5),
                         cv2.FONT_HERSHEY_SIMPLEX,
                         1.3,
-                        (0, 0, 0),
+                        (255, 255, 255),
                         3,
                         cv2.LINE_AA,
                     )

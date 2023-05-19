@@ -26,16 +26,33 @@ To run this project, you need:
 We recommend using Anaconda to create a virtual environment for the project. This can be done by running the following command:
 
 ```bash
-conda create --name <env> --file environment.yml
+conda create --name <env> python=3.8
 ```
 
 Replace `<env>` with the name of your environment.
 
-### Step 2: Download the Models
+### Step 2: Activate the Virtual Environment
+
+After creating the virtual environment, you can activate it using:
+
+```bash
+conda activate <env>
+```
+
+### Step 3: Install the Dependencies
+
+Instal the required dependencies using:
+
+```bash
+pip install mediapipe
+pip install tensorflow
+```
+
+### Step 4: Download the Models
 
 You can download the .h5 files for the trained models from [here](https://drive.google.com/drive/folders/1ZhxHnUisjtoPmuSekLHPObAlvYcrgkEI?usp=share_link). Place the files in the `app` directory.
 
-### Step 3: Running the Application
+### Step 5: Running the Application
 
 After setting up the environment, you can run the application using:
 
@@ -61,9 +78,9 @@ Two models are used in this project:
 
 ## Troubleshooting
 
+- If a package is not found, a quick fix is to install it using `pip install <package_name>` or `conda install <package_name>`.
 - If you encounter an error related to an unavailable webcam, make sure the correct webcam is set up and is not being used by another application.
-
-- If the sign recognition is not accurate, ensure the hand is well illuminated and not too close or too far from the camera.
+- If the sign recognition is not accurate, ensure the hand is somewhat well illuminated and not too close or too far from the camera.
 
 ## Contribution
 

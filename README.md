@@ -1,10 +1,10 @@
 # **Project AAA 2022/2023**
 
-![Char Cam Test GIF](imgs/char_cam_test.gif)
-
 Recognizing American Sign Language (ASL) Alphabet in Real-Time using Deep Learning
 
 This project aimed to develop a deep vision neural network that accurately recognizes the ASL alphabet in real-time. We have trained a Convolutional Neural Network (CNN) on an image dataset of ASL alphabets and utilized an autoencoder for image segmentation. The trained models are then integrated with a webcam for real-time predictions.
+
+<img src="imgs/char_cam_test.gif" alt="Char Cam Test GIF" width="100%">
 
 ## Authors
 

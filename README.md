@@ -16,8 +16,7 @@ This project aimed to develop a deep vision neural network that accurately recog
 To run this project, you need:
 
 - Python 3.8
-- Anaconda virtual environment
-- Necessary dependencies from the environment.yml file
+- Virtual environment
 
 ## Setting Up the Project
 

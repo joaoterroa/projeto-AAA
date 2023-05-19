@@ -78,6 +78,16 @@ counter = 0
 
 # For webcam input:
 cap = cv2.VideoCapture(0)
+
+# Set the desired width and height
+width = 1280
+height = 720
+
+# Set the camera resolution
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
+
+
 with mp_hands.Hands(
     model_complexity=0, min_detection_confidence=0.5, min_tracking_confidence=0.5
 ) as hands:
@@ -159,6 +169,18 @@ with mp_hands.Hands(
                             2,
                         )
 
+                    # put a black 'outline' around the text
+                    cv2.putText(
+                        image,
+                        f"Letter: {predictions[0][0]}",
+                        (x_min - extra_length + 5, y_min - extra_length - 5),
+                        cv2.FONT_HERSHEY_SIMPLEX,
+                        1.3,
+                        (0, 0, 0),  # black color
+                        5,  # slightly larger thickness
+                        cv2.LINE_AA,
+                    )
+
                     # put the text on top of the roi
                     cv2.putText(
                         image,
@@ -176,3 +198,4 @@ with mp_hands.Hands(
         if cv2.waitKey(5) & 0xFF == ord("q"):
             break
 cap.release()
+cv2.destroyAllWindows()

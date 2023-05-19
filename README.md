@@ -57,7 +57,7 @@ Two models are used in this project:
 
 - **Sign Recognition Model (`sign_2.h5`)**: A CNN model trained to recognize ASL alphabet signs from images. It is used to predict the sign being made in the segmented hand images.
 
-- **Segmentation Model (`segment.h5`)**: An autoencoder model trained to segment hand from the background in images. It is used to extract the hand from the ROI.
+- **Segmentation Model (`segment.h5`)**: An autoencoder model trained to segment a hand from the background, in images. It is used to extract the hand from the ROI.
 
 ## Troubleshooting
 

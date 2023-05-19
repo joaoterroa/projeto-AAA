@@ -9,7 +9,7 @@ This project aimed to develop a deep vision neural network that accurately recog
 ## Authors
 
 - João Terroa - fc53117
-- David Conceição - fcxxxxx
+- David Conceição - fc52518
 
 ## Requirements
 
